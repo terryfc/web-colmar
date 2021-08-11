@@ -1,0 +1,531 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+  @font-face {
+    font-family: 'Atkinson Hyperlegible';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v1/9Bt23C1KxNDXMspQ1lPyU89-1h6ONRlW45G04pIo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Atkinson Hyperlegible';
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v1/9Bt73C1KxNDXMspQ1lPyU89-1h6ONRlW45G8Wbc9dCWP.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    /* default flex-direction: row */
+    margin: 16px 0px 16px 24px;
+    height: 32px;
+    align-items: center;
+}
+
+/* logo title in 2 different colours */
+.titleMenu1 {   
+    color: black;
+    font-size: 20px;
+    line-height: 32px;    
+}
+
+.titleMenu2{
+    font-size: 20px;
+    color:grey;
+    line-height: 32px; 
+    font-weight: lighter;      
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;   
+    height: 32px;
+    margin-right: 24px;
+}
+
+nav a {
+   font-family:Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   color: black;
+   margin-left: 16px;
+}
+
+nav a:hover {
+    font-weight: bolder;
+}
+
+.section1 {
+    display:flex;
+    background-color: lightgray;  
+    align-items: center;
+}
+
+.section1 img {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.section1-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+}
+
+.section1-content h1 {
+    font-size: 30px;
+    margin-bottom: 0; 
+}
+
+.section1-content h3 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.section1-content a {
+    display: block;
+    background-color:darkgray;
+    width:80%;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.section1-content a:hover {
+    background-color:dimgray;
+}
+
+.section2 {
+    display: flex;
+}
+
+.s2-leftContent {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    margin: 32px 24px 0px;
+}
+
+ /* font styling for section 2 left content */
+ .s2-leftContent h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.s2-leftContent p {
+    font-size: 12px;
+    line-height: 20px;
+    color: gray;
+    margin: 0px;
+}
+
+.s2-leftContent h5 {
+    font-size: 12px;
+    font-weight: lighter;
+    margin-bottom: 32px;
+}
+
+.s2-rightContent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;    
+}
+
+.s2-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+}
+
+.s2-box:hover {
+    background-color: lightgray;
+}
+
+.s2-box img {
+    width: 35%;
+    height: auto;
+    margin: 16px 16px;
+}
+
+.s2-box div {
+    align-self: center;
+}
+
+.s2-rightContent h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+    
+}
+.s2-rightContent p {
+    font: 12px Arial, Helvetica, sans-serif;
+    line-height: 15px;
+    margin: 8px 8px 0px 0px;
+}
+
+.s2-rightContent a {
+    font-size: 12px;
+    text-decoration: none;
+    color:royalblue;
+}
+
+/*start of Section 3 */
+
+.section3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgray;
+}
+
+.section3 h2 {
+    font-size: 30px;
+    margin: 32px auto;
+}
+
+.allCards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 72px 32px;
+    justify-content: space-around;
+
+}
+.courseCard {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: white;
+    margin-bottom: 32px;
+}
+
+.courseCard img {
+    height: auto;
+}
+
+.courseText {
+    padding: 16px 16px 24px;
+}
+
+.courseText h3 {
+    font: 24px 'Atkinson Hyperlegible', Arial, sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.courseText h4 {
+    font: 18px lighter Arial, Helvetica, sans-serif;
+    color:darkgray;
+    margin: 8px auto;
+}
+
+.courseText p {
+    font: 15px lighter Arial, Helvetica, sans-serif;
+    color: darkgray;
+    margin: 0;
+}
+
+/* start of section 4 */
+
+.section4 {
+    background-color: white;
+}
+
+.section4 h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 32px auto;
+}
+
+.s4-content {
+    display: flex;
+}
+
+.s4-leftContent {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+}
+
+.s4-leftContent video {
+    margin: 0px 24px 24px;
+}
+
+.s4-text {
+    margin: 0px 24px 32px;
+}
+
+.s4-rightContent {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.s4-box {
+    display: flex;
+    align-items: center;
+}
+
+.s4-box:hover {
+    background-color: lightgray;
+}
+
+.s4-box img {
+    width: 35%;
+    height: auto;
+    margin: 16px 16px;
+}
+
+.s4-box-text {
+    width: 65%;
+    height: auto;
+}
+
+.s4-box h3 {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.s4-box p {
+    color: gray;
+    font-size: 10px;
+}
+
+footer {
+    border-top: 1px solid lightslategray;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    width: 100%;
+    margin: 16px 24px 0;
+}
+
+.footer-link {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 16px;
+    margin-right: 24px;
+   
+}
+
+.footer-link a{
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+@media screen and (max-width: 570px) {
+
+    /* navigation bar */
+    .logo {
+        display: none;
+    }
+
+    nav {
+        height: 64px;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    /* hide text navigation for mobile*/
+
+    a.text {
+        display: none;
+    }
+
+    /* section 1 */
+
+    .section1 {
+        flex-direction: column;
+    }
+
+    .section1 img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .section1-content {
+        margin: 32px 16px;
+    }
+
+    .section1-content h1 {
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+
+    .section1-content h3 {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    
+    .section1-content a {
+        width: 100%;
+    }
+
+    /* leftContent will not be displayed in mobile */
+
+    .s2-leftContent {
+        display: none;
+    }
+
+    .s2-rightContent {
+        width: 100%;
+        align-items: center;
+        margin: 16px 16px 32px;
+    }
+
+    .s2-box {
+        display: none;
+    }
+
+    .s2-box-mob {
+        display: block;
+    }
+
+    .s2-box-mob:hover {
+        background-color: lightgray;
+    }
+
+    .s2-box-mob img {
+        width: 100%;
+    }
+
+    .s2-box-text {
+        margin: 16px 16px 32px;
+    }
+
+    .s2-box-text h3 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .s2-box-text p {
+        font: 12px Arial, Helvetica, sans-serif;
+        line-height: 15px;
+        margin: 8px 8px 0px 0px;
+    }
+    
+    .s2-box-text a {
+        font-size: 12px;
+        text-decoration: none;
+        color:royalblue;
+    }
+
+    /* Section 3 hide cards for mobile version*/
+
+    .courseCard {
+        display: none;
+    }
+
+    .section3  {
+        background-color: white;
+    }
+
+    .allCards {
+        display: block;
+        margin: 0 16px 32px;
+    }
+
+    .section3 h2 {
+        font-size: 36px;
+        margin: 32px auto 16px;;
+    }
+    
+    .courseCard-mob a {
+        display: block;
+        background-color: lightgrey;
+        width: 100%;
+        padding: 16px 16px 24px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: left;
+        color: black;
+        margin-bottom: 8px;
+        font-size: 24px;
+        
+    }
+
+    .courseCard-mob a:hover {
+        background-color: darkgray;
+    }
+
+    /* start of section 4 for mobile*/
+
+    .s4-leftContent {
+        display: flex;
+        width: 100%;
+    }
+
+    .section4 h2 {
+        font-size: 36px;
+        margin: 32px auto 16px;
+    }
+
+    .s4-leftContent video {
+        margin: 0px 0px 24px;
+    }
+
+    /* hide text and right side content for mobile view */
+
+    .s4-text {
+        display: none;
+    }
+
+    .s4-rightContent {
+        display: none;
+    }
+
+    /* Start of footer section for mobile*/
+    .footer-text {
+        margin: 16px 0 16px;
+    }
+
+    /*footer link hidden in mobile view */
+
+    .footer-link {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 571px) {
+
+    /* hide mobile view from desktop version */
+
+    a.icon {
+        display: none;
+    }
+
+    .s2-box-mob {
+        display: none;
+    }
+
+    .courseCard-mob {
+        display: none;
+    }
+}
