@@ -4,7 +4,7 @@ Objective:
 1) To build "Colmar Academy" landing page specified by wireframe
 2) To create a website that is responsive on desktop and web
 
-Tools:
+Tools: 
 HTML, CSS
 
 Reflection:
